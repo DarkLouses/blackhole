@@ -1,0 +1,68 @@
+a {
+
+    color: $color-principal;
+    transition: $transiciones;
+
+    &:hover {
+
+        color: $color-principal-variante;
+    
+    }
+
+}
+
+
+.btn {
+
+    width: max-content;
+    display: inline-block;
+    color: $boton-pri;
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor:pointer;
+    border: 1px solid $color-principal;
+    transition: $transiciones;
+
+    &:hover {
+
+        background: $color-sombra;
+        color: $color-fondo;
+        border-color: transparent;
+    
+    }
+    
+
+}
+
+h1 , h2 , h3 ,h4 {
+
+    font-weight: 500;
+
+}
+
+h1 {
+
+    font-size: 2.5rem;
+
+}
+
+section {
+
+    margin-top: 8rem;
+    height: 100vh
+
+}
+
+section > h2 , section > h5 {
+
+    text-align: center;
+    color: $color-sombra;
+
+}
+
+section > h2 {
+
+    color: $color-principal;
+    margin-bottom: 3rem;
+
+}

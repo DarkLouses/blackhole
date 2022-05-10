@@ -1,0 +1,49 @@
+@mixin Todos {
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+@mixin barra-no {
+
+    scroll-behavior: smooth;
+
+    ::-webkit-scrollbar {
+
+        display: none;
+    
+    }
+    
+}
+
+@mixin body {
+
+    font-family: $font;
+    background: $color-fondo;
+    color : $color-sombra;
+    line-height: 1.7;
+
+}
+
+// Media Querys //
+
+@mixin container-lg {
+
+    width: $lg;
+    margin: 0 auto;
+    
+}
+
+@mixin img {
+
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    
+}

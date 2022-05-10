@@ -1,0 +1,82 @@
+@import './Sass-Componentes/variables';
+@import './Sass-Componentes/anidaciones';
+@import './Sass-Componentes/mixin';
+
+
+
+* {
+
+   @include Todos;
+
+}
+
+html {
+    
+    @include barra-no;
+
+}
+
+body {
+
+    @include body;
+
+}
+
+.text-ligth {
+
+    color: $color-sombra;
+
+}
+
+.container {
+
+   @include container-lg;
+
+}
+
+.btn-primary {
+
+    background: $color-principal;
+    color: $color-fondo;
+
+}
+
+img {
+
+    @include img;
+
+}
+
+/* media queries */
+
+@media screen and (max-width: 1024px){
+    
+    .container {
+
+        width: $md;
+
+    }
+
+    section {
+
+        margin-top: 6rem;
+        
+    }
+
+}
+
+@media screen and (max-width: 680px){
+    
+    .container {
+
+        width: $ms;
+
+    }
+
+    section > h2 {
+
+        margin-bottom: 2rem;
+        
+    }
+
+}
